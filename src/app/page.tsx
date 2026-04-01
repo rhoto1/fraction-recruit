@@ -68,19 +68,6 @@ export default function Home() {
       }
     }
 
-    // Build behavioral answers summary for email
-    let behavioralSummary = "BEHAVIORAL ASSESSMENT RESPONSES:\n\n";
-    for (let i = 0; i < BEHAVIORAL_QUESTIONS.length; i++) {
-      const answer = formData.get(`q${i + 1}`);
-      behavioralSummary += `Q${i + 1}: ${BEHAVIORAL_QUESTIONS[i]}\nAnswer: ${answer}\n\n`;
-    }
-    formData.append("Behavioral Assessment", behavioralSummary);
-
-    // Remove individual q fields from formData to keep email clean
-    for (let i = 1; i <= BEHAVIORAL_QUESTIONS.length; i++) {
-      formData.delete(`q${i}`);
-    }
-
     try {
       const response = await fetch("/api/apply", {
         method: "POST",
