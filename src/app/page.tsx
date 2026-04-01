@@ -382,10 +382,10 @@ export default function Home() {
                       LinkedIn Profile
                     </label>
                     <input
-                      type="url"
+                      type="text"
                       name="LinkedIn"
                       className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-[#00a3ff] transition-colors"
-                      placeholder="https://linkedin.com/in/..."
+                      placeholder="linkedin.com/in/yourprofile"
                     />
                   </div>
                 </div>
@@ -401,10 +401,10 @@ export default function Home() {
                     GitHub Profile
                   </label>
                   <input
-                    type="url"
+                    type="text"
                     name="GitHub"
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-[#00a3ff] transition-colors"
-                    placeholder="https://github.com/..."
+                    placeholder="github.com/yourprofile"
                   />
                 </div>
                 <div>
@@ -412,10 +412,10 @@ export default function Home() {
                     Portfolio Website
                   </label>
                   <input
-                    type="url"
+                    type="text"
                     name="Portfolio Website"
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-white placeholder-white/30 focus:outline-none focus:border-[#00a3ff] transition-colors"
-                    placeholder="https://myportfolio.com"
+                    placeholder="myportfolio.com"
                   />
                 </div>
                 <div>
